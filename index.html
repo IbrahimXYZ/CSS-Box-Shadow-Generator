@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow</title>
+    <link href="styles/styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="page">
+        <div class="boxContainer">
+            <div class="box"></div>
+        </div>
+        <div class="slidersContainer">
+            <div class="offset-x">
+                <label>Offset X</label>
+                <input id="offsetX" type="range" min="0" max="100" value="2">
+            </div>
+            <div class="offset-y">
+                <label>Offset Y</label>
+                <input id="offsetY" type="range" min="0" max="100" value="2">
+            </div>
+            <div class="blur-radius">
+                <label>Blur Radius</label>
+                <input id="blurRadius" type="range" min="0" max="100" value="2">
+            </div>
+            <div class="blur-spread">
+                <label>Blur Spread</label>
+                <input id="blurSpread" type="range" min="0" max="100" value="2">
+            </div>
+            <div class="color">
+                <label>Color</label>
+                <input type="color" id="color">
+            </div>
+            <div class="copy">
+                <textarea name="text" id="textbox"  cols="1" rows="1" readonly></textarea>
+                <button id="copy" type="button" onclick="copy()">Copy</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
